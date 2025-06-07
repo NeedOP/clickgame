@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/scores")
-@CrossOrigin(origins = "http://localhost:3000") // Allow React frontend
+@CrossOrigin(origins = "${cors.allowed-origins:http://localhost:3000}")
 public class PlayerScoreController {
 
     @Autowired
